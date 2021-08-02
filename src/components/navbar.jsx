@@ -1,20 +1,25 @@
-import React from 'react'
-import logo from '../Images/download.png'
+import React, {useState} from 'react';
+import logo from '../Images/logo.png';
+import {Link} from 'react-scroll';
 
-export const navbar = (props) => {
+function navbar()  {
+  const [nav,setnav]  = useState(false);
+
+  const changeBackground =() => {
+    if (window.scrollY >= 50) {
+      setnav(true);
+    }
+    else{
+      setnav(false);
+    }
+  }
+
+  window.addEventListener('scroll',changeBackground);
   return (
-    <div>
-      
-    </div>
+    <nav className={nav ? "nav active" : "nav"}>
+
+    </nav>
   )
 }
 
-const mapStateToProps = (state) => ({
-  
-})
-
-const mapDispatchToProps = {
-  
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(navbar)
+export default navbar
