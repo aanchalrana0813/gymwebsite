@@ -8,7 +8,7 @@ function Offers() {
         <p className ='deatails'>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
       </div>
       <div className='pr-btns'>
-          <a href='#' className='pr-btn'>JOIN US</a>
+          <a href='contact' className='pr-btn'>JOIN US</a>
         </div>
       
     </div>

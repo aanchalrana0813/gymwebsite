@@ -4,7 +4,7 @@ body{
     margin:0px;
     padding: 0px;
     background-color: #000000;
-    font-family: 'Comfortaa', 'Lato', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
 }
 *{
     box-sizing: border-box;
@@ -249,7 +249,7 @@ nav .menu-btn,
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(Images/About.jpg);
+    background-image: url(./Images/Offer.jpg);
     text-align: center;
 }
 
